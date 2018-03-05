@@ -1,5 +1,4 @@
-main()
-{
+main() {
 	thread onPlayerConnect();
 	entTransporter = getentarray( "roflenter", "targetname" );
 	if(isdefined(entTransporter))
@@ -7,8 +6,7 @@ main()
 			entTransporter[i] thread transporter();
 }
 
-onPlayerConnect()
-{
+onPlayerConnect() {
 
   	for(;;)
         {
@@ -20,8 +18,7 @@ onPlayerConnect()
 
 
 
-transporter()
-{
+transporter() {
 	for(;;)
 	{
 		self waittill( "trigger", player );
