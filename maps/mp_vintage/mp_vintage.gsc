@@ -16,8 +16,8 @@ main(){
 	
 	precacheShader("mtl_skeleton_body_n");
 	precacheShader("mtl_skeleton_body_d");
-    precacheShader("mtl_skeleton_parts_n");
-    precacheShader("mtl_skeleton_parts_d");
+	precacheShader("mtl_skeleton_parts_n");
+	precacheShader("mtl_skeleton_parts_d");
 	precacheShader("mtl_skeleton_hat");
 	precacheShader("mtl_skeleton_hat_n");
 	precacheShader("~mtl_skeleton_parts_s-rgb&$white-l-11");
