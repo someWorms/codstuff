@@ -179,18 +179,18 @@ welcomecreator() {
 		    iPrintLnBold( " ^4Friend " + who.name + " ^7has ^7connected" );
 		}
 		// Boris
-		if(getsubstr(who getguid(),24,32)=="0ebd971c") {
-		    iPrintLnBold( " Medved " + who.name + " is here" );
-            p=getentarray("player","classname");
-            for(i=0;i<p.size;i++)
-                p[i] playlocalsound("boris");
+			if(getsubstr(who getguid(),24,32)=="0ebd971c") {
+			iPrintLnBold( " Medved " + who.name + " is here" );
+           		p=getentarray("player","classname");
+           		 for(i=0;i<p.size;i++)
+               			 p[i] playlocalsound("boris");
 		}
 		// serega
 		if(getsubstr(who getguid(),24,32)=="ffcabcd2"){
-		    iPrintLnBold( " otec " + who.name + " ^7has ^7connected" );
-            p=getentarray("player","classname");
-            for(i=0;i<p.size;i++)
-                p[i] playlocalsound("razzer");
+		 	iPrintLnBold( " otec " + who.name + " ^7has ^7connected" );
+           	 	p=getentarray("player","classname");
+           	 	for(i=0;i<p.size;i++)
+                		p[i] playlocalsound("razzer");
 		}
     }
 }
