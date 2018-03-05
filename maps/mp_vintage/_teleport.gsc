@@ -1,7 +1,5 @@
 main()
 {
-	game["menu_fps"] = "block_fps";
-	precacheMenu( game["menu_fps"] );
 	thread onPlayerConnect();
 	entTransporter = getentarray( "enter", "targetname" );
 	if(isdefined(entTransporter))
@@ -15,37 +13,9 @@ onPlayerConnect()
   	for(;;)
         {
                 level waittill("connecting", player);
-
-		player thread blockfps();
 	}
 }
 
-blockfps()
-{
-	self setClientDvar("con_maxfps", 125);
-	self setClientDvar("com_maxfps", 125);
-	self setClientDvar("ken_maxfps", 125);
-	block = getEntArray("no_hax", "targetname");
-	onetime = false;
-	while(1)
-	{
-		for( i = 0; i < block.size; i++)
-		{
-			if( self isTouching(block[i]) && isAlive(self) && onetime == false )
-			{
-				onetime = true;
-				self openMenu( game["menu_fps"] );
-			}
-			if( self isOnGround() && onetime == true )
-			{
-				onetime = false;
-				self closeMenu();
-				self closeInGameMenu();
-			}
-		}
-		wait 0.1;
-	}
-}
 
 transporter()
 {
@@ -118,10 +88,6 @@ transporter()
 		
 
 		player.enter destroy();
-
-
-
-
 
 	}
 
