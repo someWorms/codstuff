@@ -37,7 +37,7 @@ main(){
  	precacheShader("mtl_harley_body");
 	precacheShader("mtl_harley_hair");
 	precacheShader("mtl_harley_limbs_2");   
-    precacheModel("harley_model");
+	precacheModel("harley_model");
 
 	precacheShader ("mtl_captainamerica_eye1");
 	precacheShader ("mtl_captainamerica_eye2");
@@ -84,7 +84,7 @@ main(){
 	level.accepted[2] = "7f4fc2fc"; //bus 92b99be78cf6190b5ee6a2757f4fc2fc     6599241b
    	level.accepted[3] = "83591354"; //ME
 	level.accepted[4] = "3b6654c0"; //KEN
-    //level.accepted[5] = "cc8f1490"; //iznogod  
+	//level.accepted[5] = "cc8f1490"; //iznogod  
 	//level.accepted[6] = "2e7d4c44"; //alex yar
 	//level.accepted[7] = "0ebd971c"; //Boris
 	//level.accepted[8] = "ffcabcd2"; //Razzer
@@ -105,8 +105,8 @@ onPlayerConnect() {
   	for(;;) {
         level waittill("connecting", player);
        	player thread onPlayerSpawned();
-		player thread block2rpg();
-		player iprintln("Map by Angry Worm & eL tiGre");
+	player thread block2rpg();
+	player iprintln("Map by Angry Worm & eL tiGre");
 	}
 }
 //////////////////////////////////////////////////////////////////
