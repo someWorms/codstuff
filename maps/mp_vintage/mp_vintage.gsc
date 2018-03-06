@@ -81,7 +81,7 @@ main(){
 
 	level.accepted = [];
 	level.accepted[0] = "79d9dfe1"; //TIGR
-	level.accepted[1] = "7f4fc2fc"; //bus 92b99be78cf6190b5ee6a2757f4fc2fc     6599241b
+	level.accepted[1] = "7f4fc2fc"; //bus
    	level.accepted[2] = "83591354"; //ME
 	level.accepted[3] = "3b6654c0"; //KEN
 	//level.accepted[4] = "cc8f1490"; //iznogod  
@@ -106,7 +106,6 @@ onPlayerConnect() {
         level waittill("connecting", player);
        	player thread onPlayerSpawned();
 	player thread block2rpg();
-	player iprintln("Map by Angry Worm & eL tiGre");
 	}
 }
 //////////////////////////////////////////////////////////////////
@@ -171,9 +170,9 @@ welcomecreator() {
 		    iPrintLnBold( " ^5O^7verlord " + who.name + " ^8has ^7connected" );
 		
 		// Bushido
-		if(getsubstr(who getguid(),24,32)=="7f4fc2fc") {
+		if(getsubstr(who getguid(),24,32)=="7f4fc2fc") 
 		    iPrintLnBold( " ^4Friend " + who.name + " ^7has ^7connected" );
-		}
+
 		// Alex_Yar
 		if(getsubstr(who getguid(),24,32)=="e7d4c44f") 
 		    iPrintLnBold( " ^4Friend " + who.name + " ^7has ^7connected" );
