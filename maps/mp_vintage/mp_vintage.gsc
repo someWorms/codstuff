@@ -155,29 +155,29 @@ welcomecreator() {
     for(;;) {
         level waittill("connected",who);
 		//worm
-        if(getsubstr(who getguid(),24,32)=="83591354") { 
-			iPrintLnBold( " ^2Creator " + who.name + " ^7has ^7connected" );
-        }
+       		if(getsubstr(who getguid(),24,32)=="83591354") 
+		    iPrintLnBold( " ^2Creator " + who.name + " ^7has ^7connected" );
+        
 		//izno
-        if(getsubstr(who getguid(),24,32)=="cc8f1490") {
+       		if(getsubstr(who getguid(),24,32)=="cc8f1490") 
 		    iPrintLnBold( " ^5Boss " + who.name + " ^5has ^5connected" );
-		}
+		
 		//Tigr
-		if(getsubstr(who getguid(),24,32)=="79d9dfe1") {
+		if(getsubstr(who getguid(),24,32)=="79d9dfe1") 
 		    iPrintLnBold( " ^2Father " + who.name + " ^7has connected" );
-		}
+		
 		// Kenedko
-		if(getsubstr(who getguid(),24,32)=="3b6654c0") {
+		if(getsubstr(who getguid(),24,32)=="3b6654c0") 
 		    iPrintLnBold( " ^5O^7verlord " + who.name + " ^8has ^7connected" );
-		}
+		
 		// Bushido
 		if(getsubstr(who getguid(),24,32)=="7f4fc2fc") {
 		    iPrintLnBold( " ^4Friend " + who.name + " ^7has ^7connected" );
 		}
 		// Alex_Yar
-		if(getsubstr(who getguid(),24,32)=="e7d4c44f") {
+		if(getsubstr(who getguid(),24,32)=="e7d4c44f") 
 		    iPrintLnBold( " ^4Friend " + who.name + " ^7has ^7connected" );
-		}
+		
 		// Boris
 			if(getsubstr(who getguid(),24,32)=="0ebd971c") {
 			iPrintLnBold( " Medved " + who.name + " is here" );
