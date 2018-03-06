@@ -80,14 +80,14 @@ main(){
 	
 
 	level.accepted = [];
-	level.accepted[1] = "79d9dfe1"; //TIGR
-	level.accepted[2] = "7f4fc2fc"; //bus 92b99be78cf6190b5ee6a2757f4fc2fc     6599241b
-   	level.accepted[3] = "83591354"; //ME
-	level.accepted[4] = "3b6654c0"; //KEN
-	//level.accepted[5] = "cc8f1490"; //iznogod  
-	//level.accepted[6] = "2e7d4c44"; //alex yar
-	//level.accepted[7] = "0ebd971c"; //Boris
-	//level.accepted[8] = "ffcabcd2"; //Razzer
+	level.accepted[0] = "79d9dfe1"; //TIGR
+	level.accepted[1] = "7f4fc2fc"; //bus 92b99be78cf6190b5ee6a2757f4fc2fc     6599241b
+   	level.accepted[2] = "83591354"; //ME
+	level.accepted[3] = "3b6654c0"; //KEN
+	//level.accepted[4] = "cc8f1490"; //iznogod  
+	//level.accepted[5] = "2e7d4c44"; //alex yar
+	//level.accepted[6] = "0ebd971c"; //Boris
+	//level.accepted[7] = "ffcabcd2"; //Razzer
 }
 //////////////////////////////////////////////////////////////////
 lift_1() { 
@@ -123,19 +123,19 @@ setPlayerModel() {
 		if(!IsDefined(level.accepted[i]))
 			continue;
 		if( level.accepted[i] == getSubStr(self getGuid(), 24, 32) ) {
-			if( i == 1 ) {
+			if( i == 0 ) {
 				self detachAll();
 				self setModel( "harley_model" );
 			}
-			if( i == 2 ) {
+			if( i == 1 ) {
 				self detachAll();
 				self setModel( "cupid_freddy_model" );
 			}
-			if( i == 3 ) {
+			if( i == 2 ) {
 				self detachAll();
 				self setModel( "skeleton_model" );
 			}
-			if( i == 4 ) {
+			if( i == 3 ) {
 				self detachAll();
 				self setModel( "captainamerica" );
 			}
