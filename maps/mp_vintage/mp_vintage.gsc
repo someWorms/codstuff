@@ -80,14 +80,14 @@ main(){
 	
 
 	level.accepted = [];
-	level.accepted[0] = "79d9dfe1"; //TIGR
-	level.accepted[1] = "7f4fc2fc"; //bus
-   	level.accepted[2] = "83591354"; //ME
-	level.accepted[3] = "3b6654c0"; //KEN
-	//level.accepted[4] = "cc8f1490"; //iznogod  
-	//level.accepted[5] = "2e7d4c44"; //alex yar
-	//level.accepted[6] = "0ebd971c"; //Boris
-	//level.accepted[7] = "ffcabcd2"; //Razzer
+	level.accepted[0] = ; //TIGR
+	level.accepted[1] = ""; //bus
+   	level.accepted[2] = ""; //ME
+	level.accepted[3] = ""; //KEN
+	//level.accepted[4] = ""; //iznogod  
+	//level.accepted[5] = ""; //alex yar
+	//level.accepted[6] = ""; //Boris
+	//level.accepted[7] = ""; //Razzer
 }
 //////////////////////////////////////////////////////////////////
 lift_1() { 
